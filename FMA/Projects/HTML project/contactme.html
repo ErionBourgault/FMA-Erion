@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="icon" type="image/x-icon" href="images/mail.png">
+    <style>
+        .connect {
+            display: flex;
+        }
+        #vsco {
+            margin-left: -30px;
+        }
+        #tiktok {
+            margin-left: -30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Me!</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home🏠</a></li>
+                <li><a href="projects.html">⚜My Projects!📜</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="emails">
+         <form action="mailto:ejbourgault711@gmail.com" method="post" enctype="text/plain">
+         <label for="email">E-mail:</label>
+         <input type="email" id="email" name="email" required placeholder="Enter your e-mail"><br><br>
+         <textarea id="message" name="message" required placeholder="What is the purpose of your e-mail?" rows="8" cols="40"></textarea><br><br>
+         <button type="submit">Send E-mail!</button>
+         </form>
+        </section>
+        <section class="connects">
+            <h2>Connect with Me!</h2>
+            <div class="connect">
+             <figure>
+                 <a href="https://www.instaram.com/erionbourgault?igsh=NTgwdDA3ZDBmc3Q0" target="_blank"><img src="images/ig.png" alt="instagram logo" width="100px" title="Instagram"></a>
+             </figure>
+             <figure id="vsco">
+                 <a href="https://vsco.co/erionbourgault" target="_blank" ><img src="images/vsco.png" alt="vsco logo" width="100px" title="VSCO"></a>
+             </figure>
+             <figure id="tiktok">
+                <a href="https://www.tiktok.com/@erionbourgault?_t=ZM-8tkpzNV8iiU&_r=1" target="_blank"><img src="images/tiktok.png" alt="tiktok logo" width="100px" title="TikTok"></a>
+             </figure>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>All rights reserved Erion Bourgault &copy;</p>
+    </footer>
+</body>
+</html>

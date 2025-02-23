@@ -1,0 +1,6 @@
+h1:first-of-type, p, h2:first-of-type {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+hr + h1, hr ~ p, hr ~ h2 {
+    font-family: monospace;
+}

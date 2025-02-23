@@ -1,0 +1,22 @@
+#a {
+    color: rgba(0, 0, 0, 0.596);
+}
+#b {
+    color: rgba(0, 0, 0, 0.3);
+}
+#c {
+    color: rgba(0, 0, 0, 0.15);
+}
+#d {
+    color: rgba(0, 0, 0, 0.05)
+}
+p {
+    transition: background-color 0.2s ease;
+}
+p:hover {
+    background-color: green;
+}
+p:hover::first-letter {
+    font-size: 1.5em;
+    font-weight: bold;
+}

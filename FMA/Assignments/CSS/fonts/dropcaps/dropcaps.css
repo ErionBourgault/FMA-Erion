@@ -1,0 +1,17 @@
+p {
+    width: 200px;
+    font-family: monospace;
+}
+.fst {
+   font-weight: bold;
+   text-transform: uppercase;
+}
+#drop-cap {
+    font-size: 4em; 
+    float: left; 
+    margin-right: 2px; 
+    line-height: 0.9;
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-decoration-thickness: 5px;
+  }

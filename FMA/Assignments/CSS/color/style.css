@@ -1,5 +1,7 @@
 body {
    background-image: url('image/royalty-free-background-image-06.jpg');
+   background-size: cover;
+   opacity: 1;
 }
 h1 {
     color: rgb(23, 110, 185);

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: lightgray;
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: repeat(5,1fr);
+        
+        }
+        .icon {
+            grid-column: 2/3;
+            grid-row: 1;
+            background-image: url(square.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .bookings {
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+       <div class="icon"></div>
+       <div class="bookings"></div>
+    </div>
+</body>
+</html>

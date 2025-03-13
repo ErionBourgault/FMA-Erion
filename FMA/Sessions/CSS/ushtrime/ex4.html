@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container>div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            text-align: center;
+            transition-delay: 1s /* Delay in transition */;
+            transition-duration: 4s /* Time to transition */;
+            transition-property: transform /* Specify what property of the div this applies to */;
+        }
+        .container>div:hover {
+            background-color: blue;
+            color: white;
+            width: 300px;
+            transform: rotate(720deg)
+        }
+        
+        .container2>div {
+            background-color: orange;
+            margin-top: 20px;
+            width: 100px;
+            height: 100px;
+        }
+        .i1 {
+            transition-timing-function: ease /* Both near the start and near the end the transition 
+            slows down but the majority is accelerated */;
+            transition-duration: 4s;
+        }
+        .i2 {
+            transition-timing-function: linear;
+            /* The transition is the same start to finish */
+            transition-duration: 4s;
+        }
+        .i3 {
+            transition-timing-function: ease-in;
+            transition-duration: 4s;
+        }
+        .i4 {
+            transition-timing-function: ease-out;
+            transition-duration: 4s;
+        }
+        .i5 {
+            transition-timing-function: ease-in-out;
+            transition-duration: 4s;
+        }
+        .container2>div:hover {
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>1</div>
+    </div>
+    <div class="container2">
+        <div class="i1">1</div>
+        <div class="i2">2</div>
+        <div class="i3">3</div>
+        <div class="i4">4</div>
+        <div class="i5">5</div>
+    </div>
+</body>
+</html>

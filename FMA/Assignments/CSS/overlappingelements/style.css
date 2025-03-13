@@ -1,0 +1,23 @@
+body {
+    margin: -11px;
+    background-color: bisque;
+    display: grid;
+    grid-template-columns: auto 100px auto;
+    grid-template-rows: auto 100px auto;
+}
+.color {
+    grid-column: 1/8;
+    grid-row: 1/4;
+    border: 3px solid aquamarine;
+    border-radius: 10px;
+}
+.container {
+    background-color: white;
+    grid-column: 3/6;
+    grid-row: 3/6;
+    padding: 10px;
+    border-radius: 20px;
+}
+.heading {
+    text-align: center;
+}

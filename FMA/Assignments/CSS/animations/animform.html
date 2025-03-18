@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            background-color: lightgray;
+            padding: 30px;
+            width: 400px;
+            font-family: monospace, sans-serif;
+            
+        }
+        .footer img {
+            width: 60px;
+            animation-name: rotate;
+            animation-timing-function: linear;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            margin-right: 70px;
+        }
+        @keyframes rotate {
+            from{transform: rotate(0deg);}
+            to{transform: rotate(360deg);}
+        }
+        div > span > input {
+            font-size: 25px;
+        }
+        #firs, #secon, #thir {
+            opacity: 0;
+            color: gray;
+            font-size: 15px;
+        }
+        .spanone #firs {
+              margin-top: 0px;
+        }
+        .spanone:hover #firs {
+            animation-name: ex1;
+             animation-duration: 0.8s;
+             animation-delay: 0.5s;
+             position: relative;
+            opacity: 1;
+            transition-duration: 0.8s;
+            transition-delay: 0.5s;
+        }
+        @keyframes ex1 {
+            from{top: 10px;}
+            to{top: 0px;}
+        }
+
+        .spantwo #secon {
+              margin-top: 0px;
+        }
+        .spantwo:hover #secon {
+            animation-name: ex2;
+            animation-delay: 0.5s;
+             animation-duration: 0.8s;
+             position: relative;
+            opacity: 1;
+            transition-delay: 0.5s;
+            transition-duration: 0.8s;
+        }
+        @keyframes ex2 {
+            from{top: 10px;}
+            to{top: 0px;}
+        }
+        
+        .spanthree #thir {
+              margin-top: 0px;
+        }
+        .spanthree:hover #thir {
+            animation-name: ex3;
+             animation-duration: 0.8s;
+             animation-delay: 0.5s;
+             
+            opacity: 1;
+            transition-duration: 0.8s;
+            transition-delay: 0.5s;
+        }
+        @keyframes ex3 {
+            from{top: 10px;}
+            to{top: 0px;}
+        }
+        .footer button {
+            font-size: 20px;
+            background-color: blue;
+            color: white;
+            padding: 6px;
+            margin-left: -30px;
+        }
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+            margin-top: -30px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span class="spanone">
+      <input type="text" placeholder="First Name"> <br>
+      <p id="firs">* Enter a valid first name</p>
+        </span>
+        <span class="spantwo">
+      <input type="text" placeholder="Last Name"> <br>
+      <p id="secon">* Enter a valid last name</p>
+    </span>
+    <span class="spanthree">
+      <input type="email" placeholder="E-mail">
+      <p id="thir">* The email has to be a Gmail domain</p>
+    </span>
+    <div class="footer">
+    <button type="submit">Submit</button>
+    <img src="../deer.svg" alt="deer loading">
+    </div>
+    </div>
+</body>
+</html>
